@@ -8,15 +8,13 @@
 
 ## 安装
 
-```sh
-dsh plugin --profile web add dsh-desktop-restart-button
-```
-
-桌面版应用内部的 profile 名为 `desktop`，也可以直接装到桌面版：
+本插件只在 DeepSeek Harness **桌面版** 生效（按钮挂在窗口标题栏上），桌面版内部的 profile 名为 `desktop`：
 
 ```sh
 dsh plugin --profile desktop add dsh-desktop-restart-button
 ```
+
+也可以在应用左侧栏的「插件」页面里安装。
 
 装好后重启一次 DeepSeek Harness（这一步还是得手动来一次 🙂），标题栏就会出现按钮。
 
