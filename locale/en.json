@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Restart button",
+    "description": "One-click restart next to the window caption buttons, with an optional confirmation while tasks are running."
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "name": "dsh-desktop-restart-button",
+  "version": "1.0.0",
+  "description": "DeepSeek Harness 桌面版标题栏一键重启按钮：在「应用 / 编辑」旁一键重启应用，默认只在有会话或后台任务运行时弹确认，避免误中断正在进行的会话。",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "cordis",
+    "restart",
+    "desktop",
+    "windows"
+  ],
+  "license": "MIT",
+  "author": "StuMing233",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "assets/*.png"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-slots"
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StuMing233/dsh-desktop-restart-button.git"
+  },
+  "homepage": "https://github.com/StuMing233/dsh-desktop-restart-button#readme",
+  "bugs": {
+    "url": "https://github.com/StuMing233/dsh-desktop-restart-button/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
